@@ -123,7 +123,9 @@ $ mix deps.get --only prod
 $ MIX_ENV=prod mix compile
 
 # Compile assets
+$ cd assets
 $ brunch build --production
+$ cd ..
 $ MIX_ENV=prod mix phoenix.digest
 
 # Custom tasks (like DB migrations)
